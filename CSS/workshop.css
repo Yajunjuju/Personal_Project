@@ -374,7 +374,7 @@ body{
 
 .question_list{
     height: 40px; 
-    background: rgba(20, 54, 66, 0.2); 
+    background: rgba(20, 54, 66, 0.8); 
     border-radius:5px;
     margin-top: 70px;
 }
@@ -382,7 +382,7 @@ body{
 .question{
     padding-left: 10px;
     line-height: 40px;
-    color: #000;
+    color: #E9E7DA;
 }
 
 .answer{
@@ -425,7 +425,7 @@ body{
 }
 
 .ws_fourth_botton{
-    background-color: rgba(20, 54, 66, 0.8); 
+    background-color: rgba(20, 54, 66, 1); 
     height: 75px; 
     width: 210px; 
     color: #E9E7DA; 
