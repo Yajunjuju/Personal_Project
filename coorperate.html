@@ -5,14 +5,166 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Cormorant+Unicase:wght@700&family=Fira+Sans:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="./CSS/coorperate_style.css" rel="stylesheet" type="text/css" />
+    
 
-
-
-
+    <script src="./JS/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    
 
     <title>合作方案</title>
+
+
 </head>
 <body>
-    
+
+    <div class="header_red_Page"></div>
+
+    <div class="wrapper">
+
+        
+
+        <!-- Top -->
+        <div class="coorperation_program">
+            <h1>Coorperate Program</h1>
+            <h2>合作方案</h2>
+            <p>作為一個專注於手工皮藝的品牌，我們致力於為客戶提供高品質的皮革製品與個性化的設計服務，並且提供多種合作方案，歡迎聯繫洽詢。</p>
+        </div>
+
+        <!-- Sec -->
+
+        <div class="coor_sec">
+            <div class="coorperation_choice">
+                <div class="group_teach">
+                    <h3>品牌皮件客製化</h3>
+                    <p>我們可以為您的企業或機構設計和製作符合您品牌風格與形象之皮革製品，如手提包、名片夾、護照夾等，以作為員工福利或者活動禮品，增加員工的凝聚力以及品牌的知名度與形象。</p>
+                </div>
+                <div class="group_teach">
+                    <h3>團體課程教學</h3>
+                    <p>我們可以為企業、機構或一般團體舉辦皮革工作坊活動，讓您的員工、客戶、工作夥伴、親朋好友一起體驗手工製作的樂趣及成就感，增進彼此之間的溝通與合作。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third -->
+
+        <div class="coor_third">
+            <div class="customized_goods">
+                <h3>客製化商品</h3>
+                <div class="goods_choice">
+                    <ul>
+                        <li><img src="./IMG/cooperation/coo 3-1.jpg" alt=""><p>零錢包</p></li>
+                        <li><img src="./IMG/cooperation/coo 3-2.jpg" alt=""><p>相機套</p></li>
+                        <li><img src="./IMG/cooperation/coo 3-3.jpg" alt=""><p>名片夾</p></li>
+                        <li><img src="./IMG/cooperation/coo 3-4.jpg" alt=""><p>生活用品</p></li>
+                        <li><img src="./IMG/cooperation/coo 3-5.jpg" alt=""><p>滑鼠墊</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Forth -->
+
+        <div class="coor_forth">
+            <div class="customer_case">
+                <h3>客戶案例</h3>
+                <div class="case_share">
+                    <ul>
+                        <li class="case1"></li>
+                        <li class="case2"></li>
+                        <li class="case3"></li>
+                        <li class="case4"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fifth -->
+
+        <div class="coor_fifth">
+            <div class="event_record">
+                <h3>活動紀實</h3>
+
+                <!-- Swiper -->
+                <div class="record_img swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="./IMG/cooperation/coo 5-1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./IMG/cooperation/coo 5-2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./IMG/cooperation/coo 5-3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./IMG/cooperation/coo 5-1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./IMG/cooperation/coo 5-2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./IMG/cooperation/coo 5-3.jpg" />
+                        </div>      
+                      </div>
+                      <div class="swiper-pagination"></div>                      
+                </div>
+
+                <div class="coor_button">
+                    <a href="#">立即詢價及報價</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footerPage"></div>
+
+
+
+
+    <!----------------------->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script src="./JS/swiper.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+
+        $(document).ready(function () {
+            $(function () {
+        
+            //引入
+            $(".footerPage").load("footer.html");
+            $(".header_red_Page").load("header_red.html");
+
+            });
+
+        });
+                
+
+    //   Initialize Swiper 
+  
+        var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        });
+  
+    </script>
 </body>
 </html>

@@ -6,24 +6,19 @@ body {
     font-family: 'Noto Serif TC', 'Cormorant Garamond', 'Cormorant Unicase', 'Fira Sans';
     font-size: 18px;
     line-height: 200%;
-
-}
-
-
-.wrapper {
-    height: 5700px;
     text-align: center;
 
 }
 
+
 .contain {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .headerPage {
-    /* display: none; */
-
+   
     position: sticky;
     top: 0;
     z-index: 1;
@@ -31,46 +26,45 @@ body {
 }
 
 
-
 .top {
-    height: 905px;
+    
+    height: 100vh;
     background-image: url(../IMG/index/home1-1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     /* overflow: hidden; */
-
+    
+    margin: auto;
     position: relative;
 
 }
 
-.logo_relative {
-    display: inline-block;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    position: relative;
 
-}
 
 .top_logo {
 
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: -50%;
+    top: 5%;
+    right: 0;    
     left: 0;
     margin: auto;
 
+    /* width: 25vw; */
     height: 200px;
 
-    /* z-index: 2; */
+    
 
 }
 
 .top_img {
-    display: block;
-    width: 950px;
-    height: 630px;
+    display: block;    
+    width: 55vw;
+    height: 80vh;
+    /* width: 950px; */
+    /* height: 630px; */
+    max-width: 1920px;
+    
 
     position: absolute;
     top: 0;
@@ -79,14 +73,20 @@ body {
     left: 0;
     margin: auto;
     border: 5px solid white;
+
+    object-fit: cover;
+    object-position: center center;
 }
 
 .round {
     display: block;
-    width: 950px;
-    height: 630px;
-    /* left: 30px; */
-    /* z-index: 1; */
+    width: 55vw;
+    height: 80vh;
+    /* width: 950px;
+    height: 630px; */
+    
+    max-width: 1920px;
+    
     border: 5px solid white;
 
     position: absolute;
@@ -97,12 +97,7 @@ body {
     margin: auto;
 }
 
-.top span {
-    /* z-index: 3; */
-    color: white;
 
-    /* border: 1px solid red; */
-}
 
 
 /* --------------------- second------------------------ */
@@ -374,9 +369,12 @@ body {
 .fifth_block {
     height: 1180px;
     background-color: #143642;
-    position: relative;
+    /* position: relative; */
 }
 
+.fifth_mid{
+    position: relative;
+}
 
 
 .fifth_pic1 {
@@ -387,7 +385,7 @@ body {
     background-position: center bottom;
     position: absolute;
     right: 60%;
-    top: 20%;
+    top: 50%;
     left: 0;
     bottom: 0;
     margin: auto;
@@ -450,7 +448,7 @@ body {
 
     position: absolute;
     right: 0;
-    top: 35%;
+    top: 55%;
     left: 65%;
     bottom: 0;
     margin: auto;

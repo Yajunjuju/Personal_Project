@@ -1,0 +1,35 @@
+/* 第一塊的線改成用double呈現，換圖 */
+
+@media screen and (max-width:414px) {
+    
+    
+
+
+/* --------------- Second block  -------------------- */
+    .headerPage{
+        display: none;
+    }
+    .sec_block{
+        display: none;
+    }
+
+    .third_block{
+        display: none;
+    }
+
+    .fourth_block{
+        display: none;
+    }
+
+    .fifth_block{
+        display: none;
+    }
+
+    .sixth_block{
+        display: none;
+    }
+
+    .footerPage{
+        display: none;
+    }
+}
