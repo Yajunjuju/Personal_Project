@@ -11,7 +11,7 @@ body{
     background-color: #541412;
     color: #CDA34F;
 
-    width: 100vw;
+    /* width: 100vw; */
     height: 70px;
     text-align: center;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
