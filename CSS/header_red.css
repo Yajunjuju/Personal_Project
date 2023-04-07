@@ -1,59 +1,66 @@
 @import url(./default.css);
 
-body{
-    font-family: 'Noto Serif TC','Cormorant Garamond', 'Cormorant Unicase', 'Fira Sans' ;
-    
-}
+
 
 /* --------------------------- Header ------------------------------- */
 
 #header {
+    font-family: 'Noto Serif TC','Cormorant Garamond', 'Cormorant Unicase', 'Fira Sans' ;
     background-color: #541412;
     color: #CDA34F;
-
-    /* width: 100vw; */
+    
     height: 70px;
-    text-align: center;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         
 }
 
-.logo_img{
-    text-align: left;
+.header_range{
+    max-width: 1280px;
+    height: 70px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+
+.header_logo_img{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .hamburger-menu {
-    display: inline-block;
-    cursor: pointer;
-    /* padding: 10px; */
-    position: relative;
-    
-    
-    left: 30%;
-    transform: translate(-50%, 50%);
-    top: -40%;
-
+    transform: translate(-100%, 125%);
     width: 25px;
-    height: 25px;
+    height: 20px;
+    cursor: pointer;
+    
+    position: relative;     
 }
 
 .hamburger-menu span {
     display: block;
-    position: absolute;
-
+    
     height: 2px;
     width: 25px;
     background: #CDA34F;
     border-radius: 2px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
+    position: absolute;
 }
 
 .hamburger-menu span:nth-child(1) {
-    top: 0;
+    top: 5px;
 }
 
 .hamburger-menu span:nth-child(2) {
-    top: 10px;
+    top: 15px;
 }
 
 .hamburger-menu.active span:nth-child(1) {
@@ -61,12 +68,8 @@ body{
 }
 
 .hamburger-menu.active span:nth-child(2) {
-    /* transform: scaleX(0); */
-    transform: translateY(-5px) rotate(-45deg);
-}
 
-.hamburger-menu.active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-5px) rotate(-45deg);
 }
 
 
@@ -74,34 +77,52 @@ body{
 /* ------------------------------ Dropdown ---------------------------------- */
 
 .navbar-dropdown-bg {
-    width: 100vw;
-    height: 460px;
+    font-family: 'Noto Serif TC';
+    /* width: 100vw; */
+    height: 280px;
     background-color: #E9E7DA;
-    display: flex;
     justify-content: center;
 }
 
 .navbar-dropdown {
-    width: 1280px;
+    max-width: 1280px;
     text-align: center;
     display: flex;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .navbar-dropdown div {
-    width: 250px;
+    width: 200px;
     color: #541412;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
+}
+.dropdown_title{
+    position: relative;
+}
+
+.dropdown_title:after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background-color: #541412;
+
+    position: absolute;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    bottom: -25%;
+    
+
 }
 
 .navbar-dropdown div ul{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .navbar-dropdown div li{
-    margin-top: 25px;
-    font-size: 20px;
+    margin-top: 10px;
+    font-size: 18px;
     font-weight: normal;
     cursor: pointer;
 }
@@ -113,28 +134,6 @@ body{
 .navbar-dropdown div li:hover{
     color: #CDA34F;
 }
-
-
-
-
-/*chorme, edge, firefox隱藏滾動條 開始*/
-html {
-    overflow: -moz-hidden-unscrollable;
-    height: 100%;
-}
-
-body::-webkit-scrollbar {
-    display: none;
-}
-
-body {
-    -ms-overflow-style: none;
-    height: 100%;
-    width: calc(100vw + 18px);
-    overflow: auto;
-}
-
-
 
 .navbar-dropdown-bg {
     position: absolute;
@@ -172,4 +171,20 @@ body {
     }
 }
 
-/*chorme, edge, firefox隱藏滾動條 結束*/
+/* chorme, edge, firefox隱藏滾動條 開始*/
+html {
+    overflow: -moz-hidden-unscrollable;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: 100%;
+    overflow: auto;
+}
+
+/*chorme, edge, firefox隱藏滾動條 結束 */

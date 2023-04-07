@@ -1,6 +1,6 @@
 @import url(./default.css);
 
-.wrapper{
+body{
     font-family: 'Noto Serif TC', 'Cormorant Garamond', 'Cormorant Unicase', 'Fira Sans';
     background-color: #E9E7DA;
     font-size: 20px;
@@ -97,7 +97,7 @@
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    padding: 100px;
+    padding: 80px;
 
     position: relative;
 }
@@ -136,9 +136,18 @@
     height: 180px;
     object-fit: cover;
     object-position: center 35%;
+
+    transform:scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.goods_choice li img:hover{
+    transform:scale(1.05);
+    filter: drop-shadow(3px 3px 5px gray)
 }
 
 .goods_choice li p{
+    margin-top: 20px;
     text-align: center;
     font-weight: bold;
 }
@@ -194,7 +203,7 @@
 .case_share li{
     width: 240px;
     height: 240px;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 50px;
 }
 
@@ -287,22 +296,62 @@
     height: 300px;
 }
 
+.swiper-button-prev{
+    padding-left: 50px;
+}
+.swiper-button-next{
+    padding-right: 50px;
+}
+
 :root {
     --swiper-theme-color: black;
 }
 .coor_button{
-    padding: 80px 0;
+    /* padding: 80px 0; */
 }
-.coor_button a{
+.coor_button{
     width: 250px;
     height: 60px;
     line-height: 60px;
-    margin: 0 auto;
+    margin: 80px auto;
     text-align: center;
     display: block;
-    background-color: rgba(20, 54, 66, .8);
     color: #E9E7DA;
     font-size: 24px;
+    font-weight: bold;
     border-radius: 10px;
+    cursor: pointer;
     
+    position: relative;
+    overflow: hidden;
+    
+    background-color:var(--background-color);
+    --background-color:#143642;
+    --accent-color:#823329;
+}
+
+.coor_button_slider::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:var(--accent-color);
+    
+    transition: all .3s ease-in-out;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left ;
+}
+.coor_button_slider:hover::before{
+    transform: scaleX(1);
+}
+.coor_button_slider{
+    z-index: 1;
+    transition: color .3s  ease-in-out;
+}
+.coor_button_slider:hover{
+    color: #E9E7DA;
+    filter: drop-shadow(2px 2px 4px gray);
 }

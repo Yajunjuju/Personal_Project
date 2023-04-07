@@ -12,10 +12,11 @@
         rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link href="./CSS/coorperate_style.css" rel="stylesheet" type="text/css" />
+    
+    <link href="./CSS/coorperate_style.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 
-    <script src="./JS/jQuery.js" type="text/javascript" charset="utf-8"></script>
     
 
     <title>合作方案</title>
@@ -41,11 +42,11 @@
 
         <div class="coor_sec">
             <div class="coorperation_choice">
-                <div class="group_teach">
+                <div class="group_teach" data-aos="fade-up" data-aos-duration="2000">
                     <h3>品牌皮件客製化</h3>
                     <p>我們可以為您的企業或機構設計和製作符合您品牌風格與形象之皮革製品，如手提包、名片夾、護照夾等，以作為員工福利或者活動禮品，增加員工的凝聚力以及品牌的知名度與形象。</p>
                 </div>
-                <div class="group_teach">
+                <div class="group_teach" data-aos="fade-up" data-aos-duration="2000">
                     <h3>團體課程教學</h3>
                     <p>我們可以為企業、機構或一般團體舉辦皮革工作坊活動，讓您的員工、客戶、工作夥伴、親朋好友一起體驗手工製作的樂趣及成就感，增進彼此之間的溝通與合作。</p>
                 </div>
@@ -113,11 +114,15 @@
                           <img src="./IMG/cooperation/coo 5-3.jpg" />
                         </div>      
                       </div>
-                      <div class="swiper-pagination"></div>                      
+                      <div class="swiper-pagination"></div>    
+                      
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
 
-                <div class="coor_button">
-                    <a href="#">立即詢價及報價</a>
+                <div >
+                    <!-- <a href="#">立即詢價及報價</a> -->
+                    <button class="coor_button coor_button_slider">立即詢價及報價</button>
                 </div>
                 
             </div>
@@ -131,10 +136,14 @@
 
     <!----------------------->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script src="./JS/jQuery.js" type="text/javascript" charset="utf-8"></script>
     <script src="./JS/swiper.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
 
         $(document).ready(function () {
+            AOS.init();
             $(function () {
         
             //引入
@@ -153,6 +162,7 @@
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: "auto",
+        initialSlide: 1,
         coverflowEffect: {
             rotate: 50,
             stretch: 0,
@@ -163,6 +173,12 @@
         pagination: {
             el: ".swiper-pagination",
         },
+        navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+
+        
         });
   
     </script>
