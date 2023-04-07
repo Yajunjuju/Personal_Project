@@ -25,7 +25,7 @@ body{
 .top_title_bg{
     width: 720px;
     height: 120px;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
 
@@ -272,9 +272,6 @@ body{
     display: flex; 
     align-items: center; 
     justify-content: center;
-    
-
-    /* outline: 1px solid red; */
 }
 
 .even{
@@ -367,6 +364,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align-last: left;
     background-color: rgba(110, 178, 203, 0.2);
     font-size: 18px;
     /* font-weight: 500; */

@@ -645,7 +645,13 @@ body {
     position: unset;
 }
 
+.swiper-button-prev {
+    margin-left: 15px;
+}
 
+.swiper-button-next {
+    margin-right: 15px;
+}
 
 
 /*自定義箭頭圖片或樣式*/
