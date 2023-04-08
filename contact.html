@@ -28,7 +28,7 @@
 
     <div class="wrapper">
         <!----------------- Header in ------------------------------------>
-        <div class="headerPage"></div>
+        <div class="header_red_Page"></div>
 
         <!----------------- Contact_first -------------------------------->
 
@@ -214,7 +214,8 @@
 
             <div class="submit" >
                 <div>
-                    <input type="submit" class="submit_button" value="送出">
+                    <!-- <input type="submit" class="submit_button" value="送出"> -->
+                    <button class="submit_button submit_button_slider">送出</button>
                 </div>
             </div>
 
@@ -233,7 +234,7 @@
         $(document).ready(function () {
             $(function () {
                 //引入header
-                $(".headerPage").load("header.html");
+                $(".header_red_Page").load("header_red.html");
                 //引入footer
                 $(".footerPage").load("footer.html");
                 $(".swiper-slide-active").eq(0).css("opacity", "1")

@@ -40,6 +40,9 @@
                     <img class="top_img" src="./IMG/index/home1-2.jpg" alt="">
                     <div class="round"></div>                    
                     <a href="./index.html"><img class="top_logo" src="./IMG/logo/Logo black.svg" alt=""></a>
+                    <video autoplay muted loop>
+                        <source src="./IMG/index_banner_video.mp4">
+                    </video>
                     
 
                 </div>
@@ -54,10 +57,12 @@
         <div class="sec_block">
             <div class="contain">
                 <h1>品牌理念</h1>
-                <img src="./IMG/index/home2-1.jpg" alt="">
-                <div class="sec_linear"></div>
-                <p  data-aos="fade-up" data-aos-duration="3000">暖觸專注於打造皮革手工藝品以及提供客製化服務，我們相信手工製作的皮革產品擁有著獨特的溫度，不僅是一種產品，更是一種故事和情感的傳遞方式，每一個作品都有各自獨特的紋理、顏色與質地，並且會隨著時間推移而充滿韻味、更加美麗，產生觸動人心的感動，因此，讓暖觸與您一同打造出屬於自己和重要他人的特別禮物！！
-                </p>
+
+                <div class="introduction">
+                    <img src="./IMG/index/home2-1.jpg" alt="">
+                    <div class="sec_linear"></div>
+                    <p data-aos="fade-up" data-aos-duration="3000">暖觸專注於打造皮革手工藝品以及提供客製化服務，我們相信手工製作的皮革產品擁有著獨特的溫度，不僅是一種產品，更是一種故事和情感的傳遞方式，每一個作品都有各自獨特的紋理、顏色與質地，並且會隨著時間推移而充滿韻味、更加美麗，產生觸動人心的感動，因此，讓暖觸與您一同打造出屬於自己和重要他人的特別禮物！！</p>
+                </div>
 
                 <div class="running_bar">
                     <span>WARM & TOUCH</span>
@@ -71,12 +76,12 @@
 
             <div class="contain">
                 <div class="third_top">
-                    <h2>皮<br><br>革</h2>
+                    <h2>皮革</h2>
 
                     <p>皮革是一種天然的高品質材料，具有柔軟、堅韌、耐久、美觀等特性，並且各自擁有獨特的紋路與色澤，適合客製化製作，打造專屬且獨一無二的皮革藝品</p>
                 </div>
 
-                <ul >
+                <ul class="leather_color" >
                     
                     <li class="index_third_img"><img src="./IMG/index/home3-1.jpg" alt=""></li>
                     <li class="index_third_img"><img src="./IMG/index/home3-2.jpg" alt=""></li>
@@ -85,8 +90,12 @@
 
                 </ul>
                 <div class="note">
-                    <p>* 每張皮革都有各自的生命故事，表面紋路為自然現象，其狀況不影響皮革品質。</p>
-                    <p>* 鞣製過程中會因物理化學作用產生些微色差，色卡顏色僅供參考。</p>
+                    <ul>
+                        <li><p>每張皮革都有各自的生命故事，表面紋路為自然現象，其狀況不影響皮革品質。</p></li>
+                        <li><p>鞣製過程中會因物理化學作用產生些微色差，色卡顏色僅供參考。</p></li>
+                    </ul>
+                    
+                    
                 </div>
 
                 <a href="./blog.html">
@@ -105,7 +114,7 @@
             <div class="contain">
                 <ul>
                     <li class="fourth_one" data-aos="fade-down" data-aos-duration="2000">
-                        <h2>工<br><br>作<br><br>坊</h2>
+                        <h2>工作坊</h2>
                         <img src="./IMG/index/home4-1.jpg" alt="">
                     </li>
 
@@ -140,9 +149,9 @@
 
 
                 <div class="fifth_mid">
-                    <h2>產<br><br><br>品</h2>
+                    <h2>產品</h2>
 
-                    <p >暖觸提供各式各樣的皮革製品，包括背包、提袋、錢包、手機套等，不僅擁有高品質的材料與工藝，同時更注重細節與設計，讓您感受最真誠的溫暖與感動最真誠的溫暖與感動</p>
+                    <p >暖觸提供各式各樣的皮革製品，包括背包、提袋、錢包、手機套等，不僅擁有高品質的材料與工藝，同時更注重細節與設計，讓您感受最真誠的溫暖與感動最真誠的溫暖與感動。</p>
 
                     <ul>
                         <li class="fifth_pic1" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="500"></li>
@@ -250,6 +259,15 @@
                     navigation: {
                         nextEl: ".swiper-button-next",
                         prevEl: ".swiper-button-prev",
+                    },
+                    breakpoints:{
+                        0:{
+                            slidesPerView: 1,
+                        },
+
+                        415:{
+                            slidesPerView:3,
+                        },
                     },
                 });
 

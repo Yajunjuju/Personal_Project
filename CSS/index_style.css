@@ -11,7 +11,6 @@ body {
 .contain {
     max-width: 1280px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .header_red_Page {
@@ -42,8 +41,8 @@ body {
 
 .top_img {
     display: block;    
-    width: 55vw;
-    height: 80vh;
+    width: 55%;
+    height: 80%;
     /* width: 950px; */
     /* height: 630px; */
     max-width: 1920px;
@@ -63,8 +62,8 @@ body {
 
 .round {
     display: block;
-    width: 55vw;
-    height: 80vh;
+    width: 55%;
+    height: 80%;
     /* width: 950px;
     height: 630px; */
     max-width: 1920px;
@@ -78,54 +77,56 @@ body {
     margin: auto;
 }
 
+.top video{
+    display: none;
+}
+
 /* --------------------- second------------------------ */
 
 .sec_block {
-
-    height: 845px;
-    margin: 0 auto;
+    margin: 0 auto 200px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
+    
 }
 
+
 .sec_block h1 {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
     font-size: 60px;
     text-align: center;
     font-weight: bold;
     line-height: 150%;
     color: #143642;
+}
 
+.introduction{
+    position: relative;
 }
 
 .sec_block img {
     width: 820px;
     height: 370px;
     display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-   
-    /* z-index: 1; */    
+    margin: 0 auto;  
 }
 
 .sec_linear {
     width: 820px;
     height: 380px;
-
     background: linear-gradient(to right, #fff, transparent 70%);
 
     position: absolute;
-    top: 7%;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    /* z-index: 1; */
 }
 
 .sec_block p {
-
+    display: block;
     width: 565px;
     height: 270px;
     background-color: rgba(84, 20, 18, 70%);
@@ -134,29 +135,29 @@ body {
     border-radius: 15px;
 
     position: absolute;
-    top: 8%;
-    right: 40%;
+    top: 0;
+    right: 30%;
     bottom: 0;
     left: 0;
     margin: auto;
-    /* z-index: 1; */
-
     text-align: justify;
 }
 
+
 .sec_block span {
-    font-size: 180px;
+    font-size: 170px;
     white-space: nowrap;
     -webkit-text-stroke: 2px gray;
     color: white;
 
     height: 170px; 
-    top: 650px;
+    top: 620px;
     position: absolute;
     right: -1500px;
 
+
     animation: run 20s linear infinite;
-    z-index: 0;
+    /* z-index: 0; */
 }
 
 @keyframes run {
@@ -173,7 +174,7 @@ body {
 /* ------------- third ---------------- */
 
 .third_block {
-    /* height: 845px; */
+
     background-color: rgba(205, 163, 79, 30%);
 
 }
@@ -183,7 +184,6 @@ body {
     margin: 0 auto;
     width: 900px;
     padding-top: 60px;
-    /* outline: 1px solid red; */
     justify-content: space-between;
     align-items: center;
     
@@ -194,7 +194,7 @@ body {
     font-size: 52px;
     font-weight: bold;
     color: #541412;
-
+    letter-spacing: 10px;
 }
 
 .third_block p {
@@ -205,10 +205,9 @@ body {
 
     font-size: 20px;
     text-align: justify;
-
 }
 
-.third_block ul {
+.third_block .leather_color{
     display: flex;
     max-width: 1100px;
     margin: 0 auto;
@@ -217,7 +216,7 @@ body {
     padding-top: 50px;
 }
 
-.third_block ul li{
+.third_block .leather_color li{
     width: 200px;
     height: 250px;
     border-radius: 10px;
@@ -253,6 +252,9 @@ body {
     font-size: 16px;
 }
 
+.note ul{
+    list-style:inside;
+}
 .third_bottom {
     /* outline: 1px solid red; */
 
@@ -261,10 +263,8 @@ body {
     margin-top: 30px;
     margin-left: 950px;
     margin-bottom: 50px;   
-    
 }
  
-
 .third_bottom span {
     font-family: 'Cormorant Garamond';
     font-size: 48px;
@@ -287,8 +287,6 @@ body {
     width: 100%;
 }
 
-
-
 .third_bottom img {
     color: #541412;
     width: 225px;
@@ -298,14 +296,16 @@ body {
 /* ----------------------------- Fourth --------------------------------- */
 
 .fourth_block {
-    height: 900px;
+    /* height: 900px; */
     margin: 0 auto;
 
 }
 
 .fourth_block ul {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    padding-bottom: 80px;
+
 }
 
 .fourth_block li {
@@ -317,19 +317,24 @@ body {
     padding-right: 50px;
 }
 
+.fourth_one{
+    display: flex;
+    flex-direction: column;
+}
 .fourth_one h2 {
     display: block;
     font-size: 52px;
+    letter-spacing: 20px;
     font-weight: bold;
     color: #143642;
-    padding: 60px;
+    margin: 20px auto;
+    writing-mode: vertical-lr;
 }
 
 .fourth_one img {
     width: 250px;
     height: 360px;
-    
-    padding-left: 40px;
+    margin: 40px auto;
     background-size: cover;
 }
 
@@ -382,9 +387,7 @@ body {
 /* ----------------------- Fifth ----------------------- */
 
 .fifth_block {
-    height: 1180px;
     background-color: #143642;
-    /* position: relative; */
 }
 
 .fifth_mid{
@@ -476,6 +479,7 @@ body {
     font-weight: bold;
     color: #CDA34F;
     padding: 60px;
+    /* writing-mode: vertical-lr; */
 
     padding-top: 500px;
 }
@@ -493,6 +497,7 @@ body {
     text-align: center;
     margin-left: 530px;
     margin-top: 60px;
+    padding-bottom: 100px;;
 }
 
 .fifth_bottom span {
@@ -525,7 +530,7 @@ body {
     font-size: 52px;
     font-weight: bold;
     color: #143642;
-    padding: 100px;
+    margin: 100px auto 80px;
 }
 
 .feedback_img1 {
@@ -581,40 +586,25 @@ body {
     margin: 50px auto;
 }
 
-.first_feedback {
+.first_feedback, .second_feedback, .third_feedback {
     float: left;
-    width: 280px;
-    height: 470px;
-    margin: 0 70px;
+    width: 360px;
+    height: 450px;
+    margin: 0 20px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border:1px solid #E9E7DA;
     padding-top: 15px;
+    border-radius: 15px;
 }
 
-.second_feedback {
-    float: left;
-    width: 280px;
-    height: 470px;
-    margin: 0 70px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    padding-top: 15px;
-}
-
-.third_feedback {
-    float: left;
-    width: 280px;
-    height: 470px;
-    margin: 0 70px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    padding-top: 15px;
-}
 
 /* ----------------------------------- */
 
 .swiper {
     width: 100%;
-    height: 100%;
-    
-
+    height: 480px;
+    margin: 20px auto;
+    position: unset;
 }
 
 /*清除預設輪播區塊z-index*/
@@ -629,6 +619,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .swiper-slide img {
@@ -638,12 +629,6 @@ body {
     object-fit: cover;
 }
 
-.swiper {
-    width: 100%;
-    height: 480px;
-    margin: 20px auto;
-    position: unset;
-}
 
 .swiper-button-prev {
     margin-left: 15px;

@@ -52,6 +52,7 @@
 
     .ws_third_title{
         padding-top: 50px;
+        padding-bottom: 30px;
     }
 
     .odd{
@@ -62,10 +63,6 @@
         transform: translate(-50%);
         position: absolute;
         margin-top: 33px;
-    }
-
-    .even{
-        flex-direction: column;
     }
 
     .container{
@@ -180,14 +177,46 @@
         left: 86%;
         height: 600px;
         width: auto;
-        top: 13%;
-    }
+        top: 20%;
+        flex-direction: column;
+        margin-top: 0;
 
-    .ws_third_tb{
+    }
+    /* tr td */
+
+    .ws_third_tb, .ws_third_tb tr, .ws_third_tb td{
         display: block;
-    
+        writing-mode: initial;
+        margin: 0 auto;
     }
 
+    .ws_third_tdl{
+        width: 60vw;
+        text-align: center;
+        padding-left: 5px;
+        font-size: 32px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+    }
+
+    .ws_third_tdr{
+        padding: 30px 30px 30px 50px;
+    }
+
+    .ws_third_tdr ul{
+        list-style:disc;
+    }
+
+    .ws_third_bottom{
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+
+    /* --- fourth --- */
+
+    .ws_fourth_block{
+
+    }
     .question_range{
         width: auto;
         margin: 0 20px;
@@ -195,6 +224,11 @@
     .question::after {
         margin-left: 10px;
         margin-bottom: 25px;
+    }
+
+    .ws_fourth_bottom{
+        padding-top: 20px;
+        padding-bottom: 50px;
     }
 
     /* -------------footer------------ */
@@ -205,8 +239,35 @@
         flex-direction: column;
         height: auto;
     }
+    .footer ul li{
+        width: 100%;
+    }
+    
+    .li_content{
+        width: 100%;
+    }
+
+    .li_content table{
+        width: 50%;
+        height: auto;
+        font-size: 20px;
+    }
+
+    .li_content table:nth-child(2){
+        display: none;
+    }
 
     .subscribe{
         display: none;
+    }
+
+    .footer li:nth-child(1){
+        order:2 ;
+    }
+    .footer li:nth-child(2){
+        order:0 ;
+    }
+    .footer li:nth-child(3){
+        order:1 ;
     }
 }
