@@ -93,6 +93,8 @@
         border-radius: 10px;
     }
 
+   
+
     .goods_choice li p{
         width: 40vw;
         margin: auto;
@@ -111,7 +113,35 @@
     /* --------------------------------------- */
 
     .customer_case h3{
+        position: relative;
+    }
 
+    .customer_case h3:before{
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-color: #CDA34F;
+        transform: rotate(45deg);
+
+        position: absolute;
+        left: 15%;
+        top: 46%;
+    }
+
+    .customer_case h3:after{
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-color: #CDA34F;
+        transform: rotate(45deg);
+
+        position: absolute;
+        right: 15%;
+        top: 46%;
+    }
+
+    :root{
+        --swiper-navigation-color:white;
     }
     /* --- footer */
 

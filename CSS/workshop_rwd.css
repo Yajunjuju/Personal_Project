@@ -43,6 +43,7 @@
         font-weight: lighter;
         width: 80%;
         margin-top: 20px;
+        height: fit-content;
         
     }
 
@@ -109,7 +110,7 @@
         border-right: 5px solid black;
         border-bottom: 0;
         font-size: 28px; 
-        width: 124px; 
+        width: 120px; 
         height: 150px;
     }
 
@@ -122,7 +123,7 @@
         border-right: 5px solid black;
         border-bottom: none;
         font-size: 28px; 
-        width: 124px; 
+        width: 120px; 
         height: 150px; 
     }
     

@@ -11,15 +11,13 @@ body{
     
     color: #E9E7DA  ;
     background-color: #E9E7DA;
-    
-    
-    
 }
 
 /* ---- Top ------ */
 
 .product_top{
     max-width: 1920px; 
+    
     margin: 0 auto;
    
 }
@@ -41,7 +39,7 @@ body{
 .text_background{
     
     display: block;
-    width: 600px;
+    width: 50vw;
     height: 120px;
     background-color: rgba(217 , 217, 217, .8);
 

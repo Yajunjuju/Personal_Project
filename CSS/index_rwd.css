@@ -237,7 +237,10 @@
     }
 
     .fifth_mid h2{
-        padding-top:250px;
+        padding: 0;
+        padding-top:350px;
+        margin: 0 auto 75px;
+
     }
 
     .fifth_mid p{

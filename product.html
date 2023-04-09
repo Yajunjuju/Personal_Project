@@ -14,6 +14,9 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./CSS/product_style.css">
+    <link rel="stylesheet" href="./CSS/product_rwd.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -26,8 +29,8 @@
         <!-- banner -->
         <div class="product_top">
             <div class="top_background"></div>            
-            <div class="text_background"></div>
-            <h1>皮革包</h1>
+            <div class="text_background" data-aos="fade-down" data-aos-duration="2000"></div>
+            <h1 data-aos="fade-down" data-aos-duration="2000">皮革包</h1>
         </div>  
 
         <!-- sec -->
@@ -184,9 +187,15 @@
 
 <!-- Script -->
     <script src="./JS/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+
     <script>
 
         $(document).ready(function () {
+
+            AOS.init();
+
             $(function () {
         
             //引入
