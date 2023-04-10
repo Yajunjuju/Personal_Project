@@ -1,13 +1,13 @@
 @import url(./default.css);
 
-.body{
+body{
     font-family: 'Noto Serif TC','Cormorant Garamond', 'Cormorant Unicase', 'Fira Sans' ;
      
     
 }
 
 .wrapper{
-    height: 4000px;
+    /* height: 4000px; */
     background-color: #E9E7DA;
 
     font-size: 20px;
@@ -21,25 +21,36 @@
     z-index: 1;
 }
 
-/* --------------------------- Artical first ---------------------------- */
+/* --------------------------- article first ---------------------------- */
 
 .index_list{
-    height: 35px;
     background-color: rgba(55, 63, 39, .5);
     color: #E9E7DA;
 }
 
-.index_range{
-    padding-left: 90px;
-    line-height: 35px;
+.index_range ul{
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.index_range li{
+    padding: 6px 12px;
+    position: relative;
+}
+
+.index_range li + li:before{
+    content: "/";
+    position: absolute;
+    left: 0;
 }
 
 .sort_time{
     display: flex;
     justify-content: space-between;
-    width: 800px;
+    width: 60vw;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .sort_time h3{
@@ -48,12 +59,11 @@
 
 .sort_time span{
     font-size: 16px;
-    font-weight: 400;
 }
 
-.artical_title{
-    width: 800px;
-    height: 160px;
+.article_title{
+    width: 65vw;
+    height: 30vh;
     border-top: 1px solid black;
     border-bottom: 1px solid #000;
 
@@ -61,23 +71,23 @@
     margin-top: 10px;
 }
 
-.artical_title h1{
+.article_title h1{
     text-align: center;
+    font-weight: bold;
     font-size: 40px;
     padding: 35px;
 }
 
-.artical_title span{
+.article_title span{
     display: block;
     font-size: 24px;
     text-align: center;
-
-    /* outline: 1px solid red; */
+    letter-spacing: .5rem;
 }
 
 .arti_first_block{
-    width: 1040px;
-    height: 640px;
+    width: 80vw;
+    /* height: 640px; */
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -85,8 +95,8 @@
 }
 
 .arti_first_block img{
-    width: 430px;
-    height: 640px;
+    width: 35vw;
+    height: 50%;
     display: block;
 }
 
@@ -100,22 +110,20 @@
 }
 
 .arti_first_block li{
-    width: 530px;
-    font-weight: normal;
+    width: 40vw;
     text-indent: 2em;
 }
 
 .arti_second_block{
-    width: 800px;
+    width: 65vw;
     margin: 0 auto;
     margin-top: 150px;
-    font-weight: normal;
     text-indent: 2em;
     text-align: justify;
 }
 
 .arti_third_block{
-    width: 1120px;
+    width: 90vw;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -124,9 +132,7 @@
 }
 
 .arti_third_block .img1{
-    width: 524px;
-    height: 367px;
-    
+    width: 42vw;    
     display: block;
     position: relative;
     bottom: 40px;
@@ -134,41 +140,36 @@
 }
 
 .arti_third_block .img2{
-    width: 524px;
-    height: 367px;
-    
+    width: 42vw;
     display: block;
     position: relative;
     top: 40px;
-    
 }
 
 .arti_fourth_block{
-    width: 800px;
+    width: 65vw;
     margin: 0 auto;
     margin-top: 150px;
-    font-weight: normal;
     text-indent: 2em;
     text-align: justify;
 
 }
 
 .arti_fifth_block{
-    width: 600px;
+    width: 45vw;
     margin: 0 auto;
     margin-top: 80px;
+    font-weight: bold;
     text-align: center;
-    /* outline: 1px solid red; */
     font-size: 32px;
     line-height: 200%;
 
 }
 
 .arti_sixth_block{
-    width: 800px;
+    width: 60vw;
     margin: 0 auto;
     margin-top: 80px;
-    font-weight: normal;
     text-indent: 2em;
     text-align: justify;
 
@@ -176,39 +177,40 @@
 
 .arti_line{
     background-color: black;
-    width: 800px;
+    width: 65vw;
     height: 2px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .arti_bottom_title{
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
+    font-weight: bold;
     margin-top: 100px;
 }
 
 .arti_seven_block{
-    width: 920px;
+    width: 75vw;
     margin: 0 auto;
-    
-    /* outline: 1px solid red; */
+    padding-bottom: 100px;
 }
 
 .seven_img1{
-    background-image: url(../IMG/artical/artical\ 1-4.jpg);
+    background-image: url(../IMG/article/article\ 1-4.jpg);
     background-size: cover;
     background-position: center center;
-    width: 410px;
-    height: 300px;
+    width: 35vw;
+    height: 70vh;
+    /* height: 300px; */
 }
 
 .seven_img2{
-    background-image: url(../IMG/artical/artical\ 1-5.jpg);
+    background-image: url(../IMG/article/article\ 1-5.jpg);
     background-size: cover;
     background-position: center center;
-    width: 410px;
-    height: 300px;
+    width: 35vw;
+    height: 70vh;
 }
 
 .arti_seven_block ul{
@@ -218,23 +220,21 @@
 }
 
 .title_time{
-    width: 410px;
+    width: 35vw;
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 .title_time h6{
     font-size: 24px;
+    font-weight: bold;
 }
 .title_time span{
     font-size: 16px;
-    font-weight: normal;
 }
 
 .seven_p p{
-    width: 410px;
-    font-weight: normal;
-
+    width: 35vw;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

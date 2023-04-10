@@ -78,7 +78,7 @@ body{
     text-align: center;
 }
 
-.artical_list{
+.article_list{
     width: 70vw;
     display: flex;
     justify-content: space-between;
@@ -88,12 +88,12 @@ body{
 
 }
 
-.blog_artical{
+.blog_article{
     width: 210px;
     /* height: 300px; */
 }
 
-.blog_artical p{
+.blog_article p{
     font-size: 24px;
     font-weight: bold;
     text-align: center;

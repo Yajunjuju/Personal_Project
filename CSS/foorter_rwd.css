@@ -1,0 +1,85 @@
+@media screen and (max-width:414px) {
+    .footer{
+        height: auto;
+        padding: 0;
+    }
+    .footer ul{
+        /* flex-direction: column; */
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .footer ul li{
+        width: 50vw;
+    }
+
+    .li_content{
+        width: 100%;
+        margin: 0;
+    }
+
+    .li_content table{
+        width: 50%;
+        height: auto;
+        font-size: 20px;
+    }
+    
+    .li_content table:nth-child(1){
+        flex-grow: 1;
+    }
+
+    .li_content table:nth-child(2){
+        display: none;
+    }
+
+    .subscribe{
+        display: none;
+    }
+
+    .footer li:nth-child(3){
+        padding: 0;
+        margin-left: 50vw;
+    }
+
+    .contact_div{
+        margin:0 auto 30px;
+        position: relative;
+        flex-grow: 1;
+    }
+
+    .contact_div::before{
+        content:"©️ worm & touch 2023";
+        font-family:'Fira Sans' ;
+        font-size: 14px;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: -75%;
+        bottom: 0;
+        margin: auto;
+    }
+    .contact_div div{
+        margin: 0 auto;
+    }
+
+    .contact_div span{
+        display: none;
+    }
+
+    .copyright{
+        display: none;
+    }
+
+    .logo_img{
+        width: 80%;
+        margin: 20px 0 20px 40px;
+    }
+
+    .table{
+        margin: 20px auto;
+    }
+
+    .footer_icon{
+        font-size: 24px;
+    }
+}

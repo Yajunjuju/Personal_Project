@@ -5,21 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="./CSS/swiper-bundle.css" rel="stylesheet" type="text/css" />
-    <link href="./CSS/contact_style.css" rel="stylesheet" type="text/css" />
+    <title>聯絡我們</title>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Cormorant+Unicase:wght@700&family=Fira+Sans:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet">  
+    
+    
+    <link href="./CSS/contact_style.css" rel="stylesheet">
+    <link href="./CSS/contact_rwd.css" rel="stylesheet" >
+    <link href="./CSS/swiper-bundle.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <script src="./JS/jQuery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./JS/swiper.js" type="text/javascript" charset="utf-8"></script>
-
-
-    <title>聯絡我們</title>
     
     
 </head>
@@ -36,7 +35,7 @@
 
             <div class="studio_title">Our Studio</div>
 
-            <div class="studio_border">
+            <div class="studio_border" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 
                 <div class="swiper-container gallery-top">
 
@@ -104,44 +103,27 @@
                 <span>交通資訊</span>
             </div>
 
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.3682655743949!2d121.52264401744382!3d25.043013800000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9708f9d0e77%3A0xde4dfc6bbe7f2dac!2z5ZyL56uL5Y-w5YyX5ZWG5qWt5aSn5a245om_5pum5qiT!5e0!3m2!1szh-TW!2stw!4v1679158054208!5m2!1szh-TW!2stw"
-                    width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            
 
             <div class="traffic_contain">
+
+                
 
                 <table class="traffic_table" >
                     <tbody>
                         <tr>
                             <th>
-                                <span class="traffic_info_title"><img src="./IMG/icon/location.svg" class="icon_image">
-                                    暖觸</span><br>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span class="traffic_info_title">暖觸</span><br>
                                 <span class="traffic_info">100 台北市中正區濟南路一段321號7樓</span>
                             </th>
-
-                            <th rowspan=4>
-                                <span class="traffic_info_title"><img src="./IMG/icon/bus.svg" class="icon_image">
-                                    大眾運輸</span><br>
-                                <span>公車：</span><br>
-                                <span>　．台北商大站</span><br>
-                                <span>　．成功中學站</span><br>
-                                <span>　．捷運善導寺站</span><br>
-                                <span>　．台北車站(青島)</span><br>
-                                <span>捷運：</span><br>
-                                <span>　．善導寺4號出口，直行【忠孝東路一段84號】至<br>　　【青島東路】左轉，再直行至【紹興南街】即抵達。</span>
-                            </th>
-
-
                         </tr>
 
 
                         <tr>
                             <td>
-                                <span class="traffic_info_title"><img src="./IMG/icon/phone.svg" class="icon_image">
-                                    電話</span><br>
+                                <i class="fa-solid fa-phone"></i>
+                                <span class="traffic_info_title">電話</span><br>
                                 <span>02 2712 0589</span>
                             </td>
                         </tr>
@@ -149,22 +131,47 @@
 
                         <tr>
                             <td>
-                                <span class="traffic_info_title"><img src="./IMG/icon/email.svg" class="icon_image">
-                                    信箱</span><br>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="traffic_info_title">信箱</span><br>
                                 <span>worm&touch@gmail.com</span>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <span class="traffic_info_title"><img src="./IMG/icon/time.svg" class="icon_image">
-                                    營業時間</span><br>
+                                <i class="fa-solid fa-clock"></i>
+                                <span class="traffic_info_title">營業時間</span><br>
                                 <span>星期二-星期日 11:00am - 21:00pm</span><br>
                                 <span>星期一 公休</span>
                             </td>
                         </tr>
+
+                        <tr>
+                            <td >                             
+                                <i class="fa-solid fa-bus"></i>
+                                <span class="traffic_info_title">大眾運輸</span><br>
+                                <ul class="traffic_type">公車：
+                                    <li>台北商大站</li>
+                                    <li>成功中學站</li>
+                                    <li>捷運善導寺站</li>
+                                    <li>台北車站(青島)</li>
+                                </ul>
+                                
+                                <ul class="traffic_type">捷運：
+                                    <li>善導寺4號出口，直行【忠孝東路一段84號】至【青島東路】左轉，再直行至【紹興南街】即抵達。</li>
+                                </ul>
+                                
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.3682655743949!2d121.52264401744382!3d25.043013800000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9708f9d0e77%3A0xde4dfc6bbe7f2dac!2z5ZyL56uL5Y-w5YyX5ZWG5qWt5aSn5a245om_5pum5qiT!5e0!3m2!1szh-TW!2stw!4v1679158054208!5m2!1szh-TW!2stw"
+                        width="500" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
 
         </div>
@@ -174,7 +181,7 @@
         <div class="contactUs" >
 
             <div>
-                <span class="contactUs_title">Contact Us</span>
+                <p class="contactUs_title">Contact Us</p>
             </div>
             
             <div class="contactUs_table">
@@ -183,30 +190,42 @@
 
                         <div class="name_range">
                             <div>
-                                <span class="title_style">Name</span>
+                                <label for="name" class="title_style">Name</label>                                
                             </div>
                             <div>
-                                <input type="text" class="input">
+                                <input type="text" class="input" id="name">
+                            </div>
+                        </div>
+                        
+                        <div class="email_range">
+                            <div>
+                                <label for="email" class="title_style">Email</label>
+                            </div>
+                            <div>
+                                <input type=" text" class="input" id="email">
                             </div>
                         </div>
 
-                        <div class="other_range">
-                            <div>
-                                <span class="title_style">Email</span>
-                            </div>
-                            <div>
-                                <input type=" text" class="input">
-                            </div>
+                        <div class="question_range">
+                            
+                                <label for="category" class="title_style">Category</label>
+                            
+                                <select class="ques_category" name="Category" id="category">
+                                    <option value=""selected>請選擇您的問題類型</option>
+                                    <option value="訂單">訂單</option>
+                                    <option value="產品">產品</option>
+                                    <option value="工作坊">工作坊</option>
+                                    <option value="其他">其他</option>
+                                </select>
+                                
                         </div>
 
-                        <div class="other_range">
+                        <div class="message_range">
                             <div>
                                 <span class="title_style">Message</span>
                             </div>
                             <div>
                                 <textarea class="textarea_input"></textarea>
-                                    <!-- <input type="text" class="input"
-                                    style="width: 900px;background-color: rgba(55, 63, 39, 0);border-bottom: 2px solid #541412;border-radius: unset; margin-top: 135px;"> -->
                             </div>
                         </div>
                     </div>
@@ -219,8 +238,6 @@
                 </div>
             </div>
 
-
-
         </div>
 
     </div>
@@ -230,8 +247,14 @@
 
     <!---------------------------- Script --------------------------------------------------->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./JS/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./JS/swiper.js" type="text/javascript" charset="utf-8"></script>
+    
     <script>
         $(document).ready(function () {
+
+            AOS.init();
             $(function () {
                 //引入header
                 $(".header_red_Page").load("header_red.html");
@@ -261,18 +284,12 @@
                 }
             });
 
-
-
         });
-
 
         function change() {
             $(".gallery-top .swiper-slide").css("opacity", "0")
             $(".swiper-slide-active").eq(0).css("opacity", "1");
         };
-
-
-
 
     </script>
 

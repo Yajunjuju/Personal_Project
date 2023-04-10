@@ -1,0 +1,57 @@
+@media screen and (max-width:414px) {
+
+    .studio_title{
+        width: 70vw;
+    }
+
+    .studio_border{
+        width: 90vw;
+        height: 40vh;
+        background-image: linear-gradient(to right, #D9D9D9 10%, transparent 10%);
+        background-size: 340px 5px;
+    }
+    .gallery-top img{
+        width: 80vw;
+    
+    }
+    .gallery-thumbs{
+        margin-left: 16px;
+    }
+
+    .gallery-thumbs .swiper-slide{
+        width: 14vw !important;
+    }
+
+    
+
+    .traffic_title{
+        padding-top: 50px;
+    }
+
+    .traffic_contain{
+        flex-direction: column;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .traffic_table{
+        width: 75vw;
+    }
+
+
+    .map iframe{
+        width: 80vw;
+        height: 40vh;
+        padding-top: 50px;
+    }
+
+    .question_range{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ques_category{
+        width: 60vw;
+        margin: 20px auto 0;
+    }
+}

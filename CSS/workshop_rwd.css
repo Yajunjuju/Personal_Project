@@ -215,9 +215,7 @@
 
     /* --- fourth --- */
 
-    .ws_fourth_block{
 
-    }
     .question_range{
         width: auto;
         margin: 0 20px;
@@ -230,45 +228,5 @@
     .ws_fourth_bottom{
         padding-top: 20px;
         padding-bottom: 50px;
-    }
-
-    /* -------------footer------------ */
-    .footer{
-        height: auto;
-    }
-    .footer ul{
-        flex-direction: column;
-        height: auto;
-    }
-    .footer ul li{
-        width: 100%;
-    }
-    
-    .li_content{
-        width: 100%;
-    }
-
-    .li_content table{
-        width: 50%;
-        height: auto;
-        font-size: 20px;
-    }
-
-    .li_content table:nth-child(2){
-        display: none;
-    }
-
-    .subscribe{
-        display: none;
-    }
-
-    .footer li:nth-child(1){
-        order:2 ;
-    }
-    .footer li:nth-child(2){
-        order:0 ;
-    }
-    .footer li:nth-child(3){
-        order:1 ;
     }
 }

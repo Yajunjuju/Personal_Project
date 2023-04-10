@@ -7,7 +7,7 @@
     .index_list ~ p{
         width: 80vw;
     }
-    .artical_list{
+    .article_list{
         flex-direction: column;
         width: 80vw;
         margin-bottom: 0;   
@@ -26,11 +26,11 @@
         letter-spacing: 10px;
     }
 
-    .blog_artical{
+    .blog_article{
         width:auto;
         height: auto;
     }
-    .blog_artical p{
+    .blog_article p{
         width: 80vw;
         font-size: 28px;
     }
@@ -68,48 +68,5 @@
     .page{
         font-size: 14px;
     }
-    /* ---------- foorter ------------- */
-
-    .footer{
-        height: auto;
-    }
-    .footer ul{
-        flex-direction: column;
-        height: auto;
-    }
-    .footer ul li{
-        width: 100%;
-    }
-
-    .li_content{
-        width: 100%;
-    }
-
-    .li_content table{
-        width: 50%;
-        height: auto;
-        font-size: 20px;
-    }
-
-    .li_content table:nth-child(2){
-        display: none;
-    }
-
-    .subscribe{
-        display: none;
-    }
-
-    .footer li:nth-child(1){
-        order:2 ;
-    }
-    .footer li:nth-child(2){
-        order:0 ;
-    }
-    .footer li:nth-child(3){
-        order:1 ;
-    }
-
-
-
-
-}
+    
+   }

@@ -1,0 +1,58 @@
+@media screen and (max-width:414px) {
+
+    .navbar-dropdown-bg{
+        width: 100vw;
+        height: auto;
+    }
+
+    .navbar-dropdown{
+        flex-direction: column;
+        line-height: 300%;
+        margin: 25px auto 25px;
+    }
+
+    .navbar-dropdown div{
+        width: 90vw;
+        height: 60px;
+        font-size: 24px;
+        /* border-bottom: 1px dashed rgba(84, 20, 18, .6); */
+    }
+    .dropdown_title{
+        width: 90vw;
+
+    }
+    .dropdown_title~ul{
+        display: none;
+    }
+
+    .dropdown_title:after{
+        display: none;
+    }
+
+    .searchbox{
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+    .searchbox input{
+        margin: auto;
+        height: 40px;
+        font-size: 14px;
+        text-align: left;
+        padding-left: 10px;   
+        width: 60vw;
+        background-color: white;
+        color: gray;
+        border-radius: 5px;
+    }
+
+    .searchbox i{
+        position: absolute;
+        top: 35%;
+        right: 0;
+        left: 55%;
+        bottom: 0;
+        margin: auto;
+        font-size: 20px;
+    }
+}
