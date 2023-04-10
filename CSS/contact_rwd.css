@@ -45,6 +45,17 @@
         padding-top: 50px;
     }
 
+    .table_range{
+        flex-direction: column;
+    }
+
+    .input{
+        width: 60vw;
+    }
+
+    .email_range{
+        margin-top: 30px;
+    }
     .question_range{
         display: flex;
         flex-direction: column;
@@ -53,5 +64,6 @@
     .ques_category{
         width: 60vw;
         margin: 20px auto 0;
+        
     }
 }

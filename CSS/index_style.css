@@ -86,7 +86,7 @@ body {
 .sec_block {
     margin: 0 auto 200px;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     
 }
 
