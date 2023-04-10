@@ -19,16 +19,18 @@
         margin-bottom: 100px;
     }
 
-    .hashtag a{
+    .hashtag p{
         font-size: 20px;
         padding: 20px 5px;
         writing-mode: vertical-lr;
         letter-spacing: 10px;
+        
     }
 
     .blog_article{
         width:auto;
         height: auto;
+        margin: 0 auto;
     }
     .blog_article p{
         width: 80vw;

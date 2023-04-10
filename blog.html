@@ -38,16 +38,16 @@
         <p>除了提供皮革手工藝品和客製化服務，我們還會定期撰寫皮件相關知識文章，讓您能夠更深入地了解皮革手工藝品的歷史、種類、製作技巧等等，讓我們一起探索皮革手工藝品的奧秘，了解其美好與價值！</p>
 
         <div class="hashtag">
-            <a href="#">精選文章</a>
-            <a href="#">最新消息</a>
-            <a href="#">基礎入門</a>
-            <a href="#">皮革保養</a>
-            <a href="#">職人訪談</a>
-            <a href="#">商品特輯</a>
+            <p class="tags">精選文章</p>
+            <p class="tags">最新消息</p>
+            <p class="tags">基礎入門</p>
+            <p class="tags">皮革保養</p>
+            <p class="tags">職人訪談</p>
+            <p class="tags">商品特輯</p>
         </div>
 
         <ul class="article_list">
-            <li class="blog_article" data-aos="fade-zoom-in" data-aos-duration="1500">
+            <li class="blog_article cards">
                 <p>人生就像一塊未加工的皮革</p>
                 <a href="./article.html"><div class="blog_img1"></div></a>
                 <div class="detail">
@@ -61,11 +61,11 @@
                 </div>
             </li>
             
-            <li class="blog_article" data-aos="fade-zoom-in" data-aos-duration="1500">
+            <li class="blog_article cards">
                 <p>文章標題</p>
                 <a href="./article.html"><div class="blog_img2"></div></a>
                 <div class="detail">
-                    <span class="sort">商品特輯</span>
+                    <span class="sort">精選文章</span>
                     <span class="time">2023/03/13</span>
                 </div>
                 <div class="hashtag_small">
@@ -75,7 +75,7 @@
                 </div>
             </li>
 
-            <li class="blog_article" data-aos="fade-zoom-in" data-aos-duration="1500">
+            <li class="blog_article cards">
                 <p>文章標題</p>
                 <a href="./article.html"><div class="blog_img3"></div></a>
                 <div class="detail">
@@ -89,10 +89,10 @@
                 </div>
             </li>
             
-        </ul>
+        <!-- </ul> -->
 
-        <ul class="article_list">
-            <li class="blog_article" data-aos="fade-zoom-in" data-aos-duration="1500">
+        <!-- <ul class="article_list "> -->
+            <li class="blog_article cards">
                 <p>文章標題</p>
                 <a href="./article.html"><div class="blog_img4"></div></a>
                 <div class="detail">
@@ -106,7 +106,7 @@
                 </div>
             </li>
             
-            <li class="blog_article" data-aos="fade-zoom-in" data-aos-duration="1500">
+            <li class="blog_article cards">
                 <p>文章標題</p>
                 <a href="./article.html"><div class="blog_img5"></div></a>
                 <div class="detail">
@@ -120,7 +120,7 @@
                 </div>
             </li>
 
-            <li class="blog_article" data-aos="fade-zoom-in" data-aos-duration="1500">
+            <li class="blog_article cards">
                 <p>文章標題</p>
                 <a href="./article.html"><div class="blog_img6"></div></a>
                 <div class="detail">
@@ -134,10 +134,10 @@
                 </div>
             </li>
             
-        </ul>
+        <!-- </ul> -->
 
-        <ul class="article_list" >
-            <li class="blog_article" data-aos="fade-zoom-in" data-aos-duration="1500">
+        <!-- <ul class="article_list "> -->
+            <li class="blog_article cards">
                 <p>文章標題</p>
                 <a href="./article.html"><div class="blog_img7"></div></a>
                 <div class="detail">
@@ -151,7 +151,7 @@
                 </div>
             </li>
             
-            <li class="blog_article" data-aos="fade-zoom-in" data-aos-duration="1500">
+            <li class="blog_article cards">
                 <p>文章標題</p>
                 <a href="./article.html"><div class="blog_img8"></div></a>
                 <div class="detail">
@@ -165,7 +165,7 @@
                 </div>
             </li>
 
-            <li class="blog_article" data-aos="fade-zoom-in" data-aos-duration="1500">
+            <li class="blog_article cards">
                 <p>文章標題</p>
                 <a href="./article.html"><div class="blog_img9"></div></a>
                 <div class="detail">
@@ -215,6 +215,55 @@
 
             });
 
+            let tags = document.getElementsByClassName('tags');
+            let cards = document.getElementsByClassName('cards');
+
+            tags[0].addEventListener('click',function(){
+                for(let i = 0; i < cards.length; i++){
+                    cards[i].classList.add('hide');
+                } cards[1].classList.remove('hide');
+                $(".page").addClass('hide');
+            });
+
+            tags[1].addEventListener('click',function(){
+                for(let i = 0; i < cards.length; i++){
+                    cards[i].classList.add('hide');
+                } cards[8].classList.remove('hide');
+                $(".page").addClass('hide');
+            });
+
+            tags[2].addEventListener('click',function(){
+                for(let i = 0; i < cards.length; i++){
+                    cards[i].classList.add('hide');
+                } cards[2].classList.remove('hide');
+                $(".page").addClass('hide');
+            });
+
+            tags[3].addEventListener('click',function(){
+                for(let i = 0; i < cards.length; i++){
+                    cards[i].classList.add('hide');
+                } cards[6].classList.remove('hide');
+                $(".page").addClass('hide');
+            });
+
+            tags[4].addEventListener('click',function(){
+                $(".article_list").css("justifyContent","start");
+                $(".blog_article").addClass("web");
+                for(let i = 0; i < cards.length; i++){
+                    cards[i].classList.add('hide');
+                } cards[0].classList.remove('hide'),
+                cards[5].classList.remove('hide');
+                $(".page").addClass('hide');
+            });
+
+            tags[5].addEventListener('click',function(){
+                for(let i = 0; i < cards.length; i++){
+                    cards[i].classList.add('hide');
+                } cards[3].classList.remove('hide'),
+                cards[4].classList.remove('hide'),
+                cards[7].classList.remove('hide');
+                $(".page").addClass('hide');
+            });
         });
 
     </script>

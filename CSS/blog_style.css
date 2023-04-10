@@ -68,7 +68,7 @@ body{
     margin-top: 60px;
 }
 
-.hashtag a{
+.hashtag p{
     background-color: rgb(55, 63, 39);
     padding: 3px 20px;
     border-radius: 5px;
@@ -76,6 +76,7 @@ body{
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
 }
 
 .article_list{
@@ -85,12 +86,21 @@ body{
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 100px;
+    flex-wrap: wrap;
+    grid: 100px;
 
 }
 
 .blog_article{
     width: 210px;
+    margin: 30px 20px;
     /* height: 300px; */
+}
+
+.web{
+    
+    margin: 30px 42px;
+    
 }
 
 .blog_article p{
@@ -238,4 +248,8 @@ body{
     top:6%;
     margin-bottom: 50px;
     
+}
+
+.hide{
+    display: none;
 }
