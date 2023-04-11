@@ -64,6 +64,11 @@
         right: 0;
     }
 
+    .sec_block span{
+        font-size: 120px;
+        top: 650px;
+    }
+
     .introduction{
         margin: 0;
         position: relative;

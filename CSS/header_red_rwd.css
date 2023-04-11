@@ -19,6 +19,7 @@
     }
     .dropdown_title{
         width: 90vw;
+        display: block;
 
     }
     .dropdown_title~ul{
